@@ -24,7 +24,7 @@ export default function Home() {
           imageSrc="/section_1.png"
           imageAlt="Nossos Parceiros"
           title="Construindo Parcerias Sólidas"
-          description="Na Lelume, acreditamos que o sucesso vem através de parcerias estratégicas e colaboração mútua. Trabalhamos com os melhores parceiros do setor agrícola para oferecer soluções inovadoras e sustentáveis que beneficiam toda a cadeia produtiva."
+          description="Transformamos grandes histórias em experiências sonoras inesquecíveis. Somos pioneiros em audiolivros no Brasil, unindo tecnologia e narrativa para conectar você ao conhecimento e à magia da literatura, onde e quando quiser."
         />
 
         {/* Section 2 Component - Ordem Invertida */}
