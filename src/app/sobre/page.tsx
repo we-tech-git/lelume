@@ -4,7 +4,7 @@ import Banner from '@/components/Banner';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sobre Nós - Lelume',
+  title: 'Lelume - Sobre Nós',
   description: 'Conheça a Lelume, especialistas em conectar pessoas a plataformas de conteúdo literário digital.',
 };
 
@@ -16,17 +16,17 @@ export default function SobreNos() {
 
       {/* Banner Component */}
       <Banner
-        imageSrc="/banner-image.jpg"
+        imageSrc="/home-banner.jpeg"
         imageAlt="Banner Sobre Nós"
-        title="Sobre Nós"
-        subtitle="Conheça nossa história e missão"
+        title=""
+        subtitle=""
       />
 
       {/* Main Content */}
       <main>
         {/* Introduction Section */}
-        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="bg-gray-50 p-8 rounded-lg">
+        <section className="mx-auto">
+          <div className="bg-gray-50 px-8 py-12 md:px-20 md:py-30 rounded-lg">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Na Lelume, quem ama ler vem primeiro. Somos especialistas em conectar pessoas a plataformas de conteúdo
               literário digital que transformam a forma de aprender, estudar e se atualizar.

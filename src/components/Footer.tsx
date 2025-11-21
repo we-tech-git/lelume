@@ -44,9 +44,9 @@ const Footer = () => {
                         <h2 className="text-4xl md:text-5xl font-bold">Contato</h2>
                     </div>
 
-                    <div id="footer-middle" className="flex flex-col">
+                    <div id="footer-middle" className="flex flex-col pr-2">
                         {/* Form Section - Left Column */}
-                        <div className="footer-form-section mb-16">
+                        <div className="footer-form-section mb-5">
                             <form onSubmit={handleSubmit}>
                                 {/* Nome e Sobrenome */}
                                 <div className="input-row mb-6">
@@ -170,18 +170,18 @@ const Footer = () => {
             </div>
 
             {/* Image Section - Right Column */}
-            <div id="footer-bottom" className="flex flex-row justify-between pr-[10%] mb-5 text-align-center">
+            <div id="footer-bottom" className="flex flex-col lg:flex-row lg:justify-between lg:pr-[10%] lg:mb-5 lg:text-align-center">
                 <div id="footer-bottom-logo-barra-contact" className="flex items-center space-x-6">
                     {/* Logo */}
-                    <div className="hidden lg:mb-8">
+                    <div className="hidden lg:block lg:mb-8">
                         <Link href="/" className="text-2xl font-bold text-gray-900">
                             <img src="/logo_lelume_footer.png" alt="Logo lelume" className='img-footer-logo' />
                         </Link>
                     </div>
                     {/* Barra vertical */}
-                    <div className="hidden lg:h-32 lg:w-0.5 lg:bg-white"></div>
+                    <div className="hidden lg:block lg:h-32 lg:w-0.5 lg:bg-white"></div>
                     {/* Contact Info */}
-                    <div className="space-y-2 text-sm mr-10">
+                    <div className="lg:space-y-2 text-sm mr-10">
                         <p className="font-semibold">GRU Airport</p>
                         <p>Terminal 1 - Rod. Hélio Smidt</p>
                         <p>07190-100 - Guarulhos - SP</p>
@@ -192,7 +192,7 @@ const Footer = () => {
 
                 <div>
                     {/* Social Icons */}
-                    <div className="flex justify-center lg:justify-end space-x-4 mt-6">
+                    <div className="hidden lg:flex lg:justify-center lg:justify-end space-x-4 mt-6">
                         <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <span className="text-blue-600 font-bold text-sm">f</span>
                         </a>
@@ -203,7 +203,12 @@ const Footer = () => {
                             <span className="text-blue-600 font-bold text-sm">in</span>
                         </a>
                     </div>
-
+                    {/* Logo */}
+                    <div className="justify-center lg:hidden flex mt-6">
+                        <Link href="/" className="text-2xl font-bold text-gray-900">
+                            <img src="/logo_lelume_footer.png" alt="Logo lelume" className='img-footer-logo' />
+                        </Link>
+                    </div>
                     {/* Footer Text */}
                     <div className="mt-8 text-xs text-blue-200">
                         <p>Preferência de cookies | Política de privacidade | © 2025 lelume.</p>
