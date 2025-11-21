@@ -16,15 +16,13 @@ const Banner = ({
   className = "" 
 }: BannerProps) => {
   return (
-    <section className={`relative w-full h-[500px] md:h-[600px] lg:h-[700px] ${className}`}>
+    <section className={`relative w-full ${className}`}>
       {/* Banner Image */}
-      <div className="relative w-full h-full overflow-hidden">
-        <Image
+      <div className="">
+        <img
           src={imageSrc}
           alt={imageAlt}
-          fill
-          className="object-cover"
-          priority
+          className="object-cover w-full"
         />
         
         {/* Overlay for better text readability if title/subtitle are provided */}

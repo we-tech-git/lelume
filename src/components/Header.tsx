@@ -1,6 +1,20 @@
+'use client';
+
 import Link from 'next/link';
 
 const Header = () => {
+  // Função opcional para scroll suave mais controlado
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,36 +22,48 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-gray-900">
-              Lelume
+              <img src="/logo_lelume.png" alt="Logo lelume" className='img-header-logo' />
             </Link>
           </div>
-          
+
           {/* Navigation Menu */}
           <nav className="hidden md:flex space-x-8">
-            <Link 
-              href="/sobre" 
+            <Link
+              href="/sobre"
               className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Sobre nós
             </Link>
-            <Link 
-              href="/parceiros" 
+            <button
+              onClick={(e) => handleSmoothScroll(e, 'parceiros')}
               className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Parceiros
-            </Link>
-            <Link 
-              href="/feiras" 
+            </button>
+            <button
+              onClick={(e) => handleSmoothScroll(e, 'feiras')}
+              className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+            >
+              Feiras
+            </button>
+            <button
+              onClick={(e) => handleSmoothScroll(e, 'contato')}
+              className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+            >
+              Contato
+            </button>
+            {/* <Link
+              href="/feiras"
               className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Feiras
             </Link>
-            <Link 
-              href="/contato" 
+            <Link
+              href="/contato"
               className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Contato
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Mobile menu button */}

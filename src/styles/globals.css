@@ -1,0 +1,183 @@
+/* Global CSS for custom classes */
+
+
+/* Smooth scroll behavior */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Form Styles */
+
+.form-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 0;
+    border-bottom: 2px solid #93c5fd;
+    background-color: transparent;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: #bfdbfe;
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom-color: white;
+}
+
+.form-label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-checkbox {
+    margin-right: 8px;
+    accent-color: white;
+}
+
+.form-checkbox-label {
+    color: white;
+    font-size: 14px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 0;
+    border-bottom: 2px solid #93c5fd;
+    background-color: transparent;
+    color: white;
+    resize: none;
+    min-height: 60px;
+    transition: border-color 0.3s ease;
+}
+
+.form-textarea::placeholder {
+    color: #bfdbfe;
+}
+
+.form-textarea:focus {
+    outline: none;
+    border-bottom-color: white;
+}
+
+.form-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 9999px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: white;
+    color: #1E7BFF;
+}
+
+
+/* Footer Styles */
+
+.footer-container {
+    background-color: #1E7BFF;
+    color: white;
+    padding: 64px 0;
+}
+
+.footer-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.footer-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-image-section {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .footer-image-section {
+        justify-content: flex-end;
+    }
+}
+
+
+/* Required field asterisk */
+
+.required::after {
+    content: "*";
+    color: #FFB6C1;
+    margin-left: 2px;
+}
+
+
+/* Input grid layouts */
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.bg-section {
+    background-color: #0299FA;
+}
+
+.bg-card-sections {
+    background-image: url('/card-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    /* height: 500px; */
+    margin: 60px auto;
+    border-radius: 20px;
+}
+
+.img-header-logo {
+    width: 35%;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-card-sections {
+        /* height: 50%; */
+    }
+}

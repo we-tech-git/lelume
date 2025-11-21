@@ -1,6 +1,9 @@
 import Header from '@/components/Header';
 import Banner from '@/components/Banner';
 import Section1 from '@/components/Section1';
+import Section2 from '@/components/Section2';
+import SectionCards from '@/components/SectionCards';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -10,19 +13,56 @@ export default function Home() {
       
       {/* Banner Component */}
       <Banner
-        imageSrc="/banner-image.jpg"
+        imageSrc="/home-banner.jpeg"
         imageAlt="Banner Lelume"
-        title="Bem-vindos à Lelume"
+        title=""
         subtitle=""
       />
       
-      {/* Section 1 Component */}
-      <Section1
-        imageSrc="/partners-image.png"
-        imageAlt="Nossos Parceiros"
-        title="Ouça Histórias, Viva Experiências"
-        description="Transformamos grandes histórias em experiências sonoras inesquecíveis. Somos pioneiros em audiolivros no Brasil, unindo tecnologia e narrativa para conectar você ao conhecimento e à magia da literatura, onde e quando quiser."
+      <div className='bg-section'>
+        <Section1
+          imageSrc="/section_1.png"
+          imageAlt="Nossos Parceiros"
+          title="Construindo Parcerias Sólidas"
+          description="Na Lelume, acreditamos que o sucesso vem através de parcerias estratégicas e colaboração mútua. Trabalhamos com os melhores parceiros do setor agrícola para oferecer soluções inovadoras e sustentáveis que beneficiam toda a cadeia produtiva."
+        />
+        
+        {/* Section 2 Component - Ordem Invertida */}
+        <Section2
+          imageSrc="/section-2-image.png"
+          imageAlt="Mulher olhando para tablet"
+          title="O Universo das HQs ao Seu Alcance"
+          description="Descubra, leia e colecione histórias em quadrinhos de todos os gêneros, em qualquer lugar. A Social Comics é a plataforma digital que conecta fãs e criadores, trazendo as melhores HQs e conteúdos exclusivos na palma da sua mão."
+          sectionTitle=""
+        />
+      </div>
+      
+      {/* Section Cards Component */}
+      <SectionCards
+        sectionTitle="Principais Feiras"
+        contentDescription="Resolving neglected air tolerably but existence conveying for. Day his put off unaffected literature partiality inhabiting."
+        cards={[
+          {
+            title: "Santos",
+            subtitle: "Congresso Paulistade Neurologia 2025",
+          },
+          {
+            title: "Rio de Janeiro",
+            subtitle: "Congresso da Associação Brasileira de Fisioterapia Cardiorrespiratória 2025",
+          },
+          {
+            title: "Santa Catarina", 
+            subtitle: "Congresso Sul-Brasileirode Oftalmologia",
+          },
+          {
+            title: "São Paulo",
+            subtitle: "Congresso Brasileiro de Cannabis Medicinal",
+          }
+        ]}
       />
+      
+      {/* Footer Component */}
+      <Footer />
     </div>
   );
 }
