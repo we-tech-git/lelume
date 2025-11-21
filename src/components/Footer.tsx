@@ -193,13 +193,13 @@ const Footer = () => {
                 <div>
                     {/* Social Icons */}
                     <div className="hidden lg:flex lg:justify-center lg:justify-end space-x-4 mt-6">
-                        <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                        <a href="https://www.facebook.com/share/1MZ75meDrp/?mibextid=wwXIfr" target='_blank' className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <span className="text-blue-600 font-bold text-sm">f</span>
                         </a>
-                        <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                        <a href="mailto:comercial.lelume@gmail.com" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <span className="text-blue-600 font-bold text-sm">@</span>
                         </a>
-                        <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                        <a href="https://www.instagram.com/lelume.br?igsh=YzIyN3FwY2E2cnBj" target='_blank' className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <span className="text-blue-600 font-bold text-sm">in</span>
                         </a>
                     </div>
