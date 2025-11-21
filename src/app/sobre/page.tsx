@@ -1,6 +1,12 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Banner } from '@/components';
+import Banner from '@/components/Banner';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sobre Nós - Lelume',
+  description: 'Conheça a Lelume, especialistas em conectar pessoas a plataformas de conteúdo literário digital.',
+};
 
 export default function SobreNos() {
   return (
@@ -8,18 +14,19 @@ export default function SobreNos() {
       {/* Header Component */}
       <Header />
 
+      {/* Banner Component */}
       <Banner
-        imageSrc="/home-banner.jpeg"
-        imageAlt="Banner Lelume"
-        title=""
-        subtitle=""
+        imageSrc="/banner-image.jpg"
+        imageAlt="Banner Sobre Nós"
+        title="Sobre Nós"
+        subtitle="Conheça nossa história e missão"
       />
 
       {/* Main Content */}
-      <main className="">
+      <main>
         {/* Introduction Section */}
-        <section className="mx-auto w-full">
-          <div className="bg-gray-50 p-12 rounded-lg">
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="bg-gray-50 p-8 rounded-lg">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Na Lelume, quem ama ler vem primeiro. Somos especialistas em conectar pessoas a plataformas de conteúdo
               literário digital que transformam a forma de aprender, estudar e se atualizar.

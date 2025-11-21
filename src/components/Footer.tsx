@@ -138,12 +138,12 @@ const Footer = () => {
                                 </div>
 
                                 {/* Botão Enviar */}
-                                <div id="botao-social-icon" className="flex flex-row lg:flex-row justify-between items-center">
+                                <div id="botao-social-icon" className="flex flex-row lg:flex-row justify-between items-center text-align-center">
                                     <button type="submit" className="form-button">
                                         Enviar
                                         <span className="ml-2">→</span>
                                     </button>
-                                    <div className="pr-4">
+                                    <div className="pr-4 pb-2">
                                         {/* Social Icons */}
                                         <div className="flex justify-center lg:justify-end space-x-4 mt-6">
                                             <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
