@@ -143,9 +143,9 @@ const Footer = () => {
                                         Enviar
                                         <span className="ml-2">→</span>
                                     </button>
-                                    <div className="pr-4 pb-2">
+                                    <div className="pr-4 pb-2 block lg:hidden">
                                         {/* Social Icons */}
-                                        <div className="flex justify-center lg:justify-end space-x-4 mt-6">
+                                        <div className="flex justify-center space-x-4 mt-6">
                                             <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                                                 <span className="text-blue-600 font-bold text-sm">f</span>
                                             </a>
@@ -155,7 +155,8 @@ const Footer = () => {
                                             <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                                                 <span className="text-blue-600 font-bold text-sm">in</span>
                                             </a>
-                                        </div></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -172,13 +173,13 @@ const Footer = () => {
             <div id="footer-bottom" className="flex flex-row justify-between pr-[10%] mb-5 text-align-center">
                 <div id="footer-bottom-logo-barra-contact" className="flex items-center space-x-6">
                     {/* Logo */}
-                    <div className="mb-8">
+                    <div className="hidden lg:mb-8">
                         <Link href="/" className="text-2xl font-bold text-gray-900">
                             <img src="/logo_lelume_footer.png" alt="Logo lelume" className='img-footer-logo' />
                         </Link>
                     </div>
                     {/* Barra vertical */}
-                    <div className="h-32 w-0.5 bg-white"></div>
+                    <div className="hidden lg:h-32 lg:w-0.5 lg:bg-white"></div>
                     {/* Contact Info */}
                     <div className="space-y-2 text-sm mr-10">
                         <p className="font-semibold">GRU Airport</p>
