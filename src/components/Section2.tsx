@@ -10,13 +10,13 @@ interface Section2Props {
   className?: string;
 }
 
-const Section2 = ({ 
-  imageSrc, 
-  imageAlt, 
-  title, 
-  description, 
+const Section2 = ({
+  imageSrc,
+  imageAlt,
+  title,
+  description,
   sectionTitle,
-  className = "" 
+  className = ""
 }: Section2Props) => {
   return (
     <section className={`py-16 ${className}`}>
@@ -34,9 +34,12 @@ const Section2 = ({
             {/* Content Column - First */}
           <div className="space-y-6 order-2 lg:order-1">
             <MinhaBiblioteca />
-            <h3 className="text-2xl md:text-3xl font-bold text-white">
+            <h1 className="text-2xl md:text-3xl mb-2 mt-5 font-bold text-white">
               {title}
-            </h3>
+            </h1>
+            <h2 className="text-lg mt-2 font-bold text-white">
+              De forma prática, moderna e sem limites.
+            </h2>
             <p className="text-lg text-white leading-relaxed">
               {description}
             </p>
@@ -46,7 +49,7 @@ const Section2 = ({
             <img
               src={imageSrc}
               alt={imageAlt}
-              className="object-cover w-full"
+              className="object-cover img-sections"
             />
           </div>
 

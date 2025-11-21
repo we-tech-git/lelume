@@ -32,7 +32,7 @@ const Section1 = ({
             <img
               src={imageSrc}
               alt={imageAlt}
-              className="object-cover w-full h-full"
+              className="object-cover img-sections"
             />
           </div>
 

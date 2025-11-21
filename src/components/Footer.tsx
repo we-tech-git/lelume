@@ -182,10 +182,10 @@ const Footer = () => {
                     <div className="hidden lg:block lg:h-32 lg:w-0.5 lg:bg-white"></div>
                     {/* Contact Info */}
                     <div className="lg:space-y-2 text-sm mr-10">
-                        <p className="font-semibold">GRU Airport</p>
-                        <p>Terminal 1 - Rod. Hélio Smidt</p>
-                        <p>07190-100 - Guarulhos - SP</p>
-                        <p>Tel: +55.11.9919.5995</p>
+                        <p className="font-semibold">Shopping Internacional - Piso Térreo - Quiosque QM34</p>
+                        <p>Rod. Pres. Dutra, 225 - Vila Itapegica</p>
+                        <p>07034-911 - Guarulhos - SP</p>
+                        <p>Cel: +55 11 99289-2495</p>
                         <p>www.lelume.com.br</p>
                     </div>
                 </div>

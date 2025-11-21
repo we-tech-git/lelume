@@ -221,6 +221,10 @@ html {
     background-color: #007FC6;
 }
 
+.img-sections {
+    width: 85%;
+}
+
 @media screen and (max-width: 768px) {
     .bg-card-sections {
         /* height: 50%; */

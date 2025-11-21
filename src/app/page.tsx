@@ -10,7 +10,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       {/* Header Component */}
       <Header />
-      
+
       {/* Banner Component */}
       <Banner
         imageSrc="/home-banner.jpeg"
@@ -18,7 +18,7 @@ export default function Home() {
         title=""
         subtitle=""
       />
-      
+
       <div className='bg-section'>
         <Section1
           imageSrc="/section_1.png"
@@ -26,17 +26,17 @@ export default function Home() {
           title="Construindo Parcerias Sólidas"
           description="Na Lelume, acreditamos que o sucesso vem através de parcerias estratégicas e colaboração mútua. Trabalhamos com os melhores parceiros do setor agrícola para oferecer soluções inovadoras e sustentáveis que beneficiam toda a cadeia produtiva."
         />
-        
+
         {/* Section 2 Component - Ordem Invertida */}
         <Section2
           imageSrc="/section-2-image.png"
           imageAlt="Mulher olhando para tablet"
-          title="O Universo das HQs ao Seu Alcance"
-          description="Descubra, leia e colecione histórias em quadrinhos de todos os gêneros, em qualquer lugar. A Social Comics é a plataforma digital que conecta fãs e criadores, trazendo as melhores HQs e conteúdos exclusivos na palma da sua mão."
+          title="O conhecimento que transforma"
+          description="A Biblioteca Virtual oferece um acervo digital com títulos das maiores editoras parceiras, garantindo acesso ilimitado, multiusuário e sempre atualizado. Permite leitura offline, sincroniza em qualquer dispositivo, integra-se a sistemas LMS e atende bibliografias acadêmicas reconhecidas. Com busca avançada, anotações e destaques, a plataforma transforma estudo em experiência inteligente e contínua."
           sectionTitle=""
         />
       </div>
-      
+
       {/* Section Cards Component */}
       <SectionCards
         sectionTitle="Principais Feiras"
@@ -51,7 +51,7 @@ export default function Home() {
             subtitle: "Congresso da Associação Brasileira de Fisioterapia Cardiorrespiratória 2025",
           },
           {
-            title: "Santa Catarina", 
+            title: "Santa Catarina",
             subtitle: "Congresso Sul-Brasileirode Oftalmologia",
           },
           {
@@ -60,7 +60,7 @@ export default function Home() {
           }
         ]}
       />
-      
+
       {/* Footer Component */}
       <Footer />
     </div>

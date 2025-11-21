@@ -28,10 +28,9 @@ export default function SobreNos() {
         <section className="mx-auto">
           <div className="bg-gray-50 px-8 py-12 md:px-20 md:py-30 rounded-lg">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Na Lelume, quem ama ler vem primeiro. Somos especialistas em conectar pessoas a plataformas de conteúdo
-              literário digital que transformam a forma de aprender, estudar e se atualizar.
+              A Lêlume conecta leitores, estudantes e profissionais da saúde a um universo completo de e-books, audiobooks, revistas e conteúdos técnicos. São milhares de títulos que vão da literatura geral a mais de 3.200 obras médicas disponíveis pela Minha Biblioteca. Tudo pensado para aprender, estudar e se atualizar com praticidade, economia e inovação, colocando o conhecimento no centro da sua rotina.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            {/* <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Nosso portfólio é um convite para explorar: e-books, audiobooks, revistas temáticas, quadrinhos, gibis, mangás e
               até jogos — conhecidos pensados para todos os estilos, idades e momentos do dia.
             </p>
@@ -44,7 +43,7 @@ export default function SobreNos() {
               Mais do que uma marca, a Lelume é uma experiência digital prática, econômica e sustentável — unindo inovação,
               curadoria e proximidade para colocar o conhecimento no centro da sua rotina, seja você leitor, estudante ou
               profissional da saúde.
-            </p>
+            </p> */}
           </div>
         </section>
 
