@@ -38,31 +38,35 @@ export default function Home() {
       </div>
 
       {/* Section Cards Component */}
-      <SectionCards
-        sectionTitle="Principais Feiras"
-        contentDescription="Resolving neglected air tolerably but existence conveying for. Day his put off unaffected literature partiality inhabiting."
-        cards={[
-          {
-            title: "Santos",
-            subtitle: "Congresso Paulistade Neurologia 2025",
-          },
-          {
-            title: "Rio de Janeiro",
-            subtitle: "Congresso da Associação Brasileira de Fisioterapia Cardiorrespiratória 2025",
-          },
-          {
-            title: "Santa Catarina",
-            subtitle: "Congresso Sul-Brasileirode Oftalmologia",
-          },
-          {
-            title: "São Paulo",
-            subtitle: "Congresso Brasileiro de Cannabis Medicinal",
-          }
-        ]}
-      />
+      <div id="feiras">
+        <SectionCards
+          sectionTitle="Principais Feiras"
+          contentDescription="Resolving neglected air tolerably but existence conveying for. Day his put off unaffected literature partiality inhabiting."
+          cards={[
+            {
+              title: "Santos",
+              subtitle: "Congresso Paulistade Neurologia 2025",
+            },
+            {
+              title: "Rio de Janeiro",
+              subtitle: "Congresso da Associação Brasileira de Fisioterapia Cardiorrespiratória 2025",
+            },
+            {
+              title: "Santa Catarina",
+              subtitle: "Congresso Sul-Brasileirode Oftalmologia",
+            },
+            {
+              title: "São Paulo",
+              subtitle: "Congresso Brasileiro de Cannabis Medicinal",
+            }
+          ]}
+        />
+      </div>
 
       {/* Footer Component */}
-      <Footer />
+      <div id="contato">
+        <Footer />
+      </div>
     </div>
   );
 }

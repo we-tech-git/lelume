@@ -206,7 +206,7 @@ html {
 }
 
 .img-header-logo {
-    width: 35%;
+    width: 25%;
 }
 
 .bg-mission {
@@ -222,11 +222,16 @@ html {
 }
 
 .img-sections {
-    width: 85%;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.bg-header-menu {
+    background-color: #101010c0;
 }
 
 @media screen and (max-width: 768px) {
     .bg-card-sections {
-        /* height: 50%; */
+        margin: 20px auto;
     }
 }

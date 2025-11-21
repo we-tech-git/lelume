@@ -36,7 +36,7 @@ const Footer = () => {
     };
 
     return (
-        <footer id="footer" className="relative w-full bg-blue-600 text-white overflow-hidden pl-[10%]">
+        <footer id="contato" className="relative w-full bg-blue-600 text-white overflow-hidden pl-[10%]">
             <div id="footer-title-form-draw" className="flex flex-col lg:flex-row w-full max-w-full justify-between">
                 <div id="footer-title-form" className="relative z-10 flex flex-col mt-10">
                     {/* Title */}
@@ -107,7 +107,7 @@ const Footer = () => {
                                 <div className="mb-6 flex ">
                                     <label className="form-label required">Selecionar assunto</label>
                                     <div className="checkbox-group">
-                                        {['Cliente', 'Fornecedor', 'Imprensa', 'Parceria', 'Vagas', 'Outros'].map((assunto) => (
+                                        {['Fornecedor', 'Parceria', 'Outros'].map((assunto) => (
                                             <label key={assunto} className="form-checkbox-label">
                                                 <input
                                                     type="checkbox"
@@ -146,12 +146,6 @@ const Footer = () => {
                                     <div className="pr-4 pb-2 block lg:hidden">
                                         {/* Social Icons */}
                                         <div className="flex justify-center space-x-4 mt-6">
-                                            <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-                                                <span className="text-blue-600 font-bold text-sm">f</span>
-                                            </a>
-                                            <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-                                                <span className="text-blue-600 font-bold text-sm">@</span>
-                                            </a>
                                             <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                                                 <span className="text-blue-600 font-bold text-sm">in</span>
                                             </a>
@@ -193,12 +187,6 @@ const Footer = () => {
                 <div>
                     {/* Social Icons */}
                     <div className="hidden lg:flex lg:justify-center lg:justify-end space-x-4 mt-6">
-                        <a href="https://www.facebook.com/share/1MZ75meDrp/?mibextid=wwXIfr" target='_blank' className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-                            <span className="text-blue-600 font-bold text-sm">f</span>
-                        </a>
-                        <a href="mailto:comercial.lelume@gmail.com" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
-                            <span className="text-blue-600 font-bold text-sm">@</span>
-                        </a>
                         <a href="https://www.instagram.com/lelume.br?igsh=YzIyN3FwY2E2cnBj" target='_blank' className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <span className="text-blue-600 font-bold text-sm">in</span>
                         </a>

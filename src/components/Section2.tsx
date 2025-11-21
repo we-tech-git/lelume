@@ -33,7 +33,7 @@ const Section2 = ({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Content Column - First */}
           <div className="space-y-6 order-2 lg:order-1">
-            <MinhaBiblioteca />
+            <img src="/logo_biblioteca_virtual.png" alt="Logo biblioteca virtual" />
             <h1 className="text-2xl md:text-3xl mb-2 mt-5 font-bold text-white">
               {title}
             </h1>
