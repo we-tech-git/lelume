@@ -9,9 +9,13 @@ const Footer = () => {
         sobrenome: '',
         email: '',
         telefone: '',
-        assunto: '', // Changed from array to string
+        assunto: '',
         mensagem: ''
     });
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [statusMessage, setStatusMessage] = useState('');
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -25,14 +29,56 @@ const Footer = () => {
         const { value } = e.target;
         setFormData(prev => ({
             ...prev,
-            assunto: prev.assunto === value ? '' : value // Toggle: deselect if same, select if different
+            assunto: prev.assunto === value ? '' : value
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        // Aqui você pode adicionar a lógica para enviar o formulário
+
+        // Validação básica
+        if (!formData.assunto) {
+            setSubmitStatus('error');
+            setStatusMessage('Por favor, selecione um assunto.');
+            return;
+        }
+
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setSubmitStatus('success');
+                setStatusMessage('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                // Limpar formulário
+                setFormData({
+                    nome: '',
+                    sobrenome: '',
+                    email: '',
+                    telefone: '',
+                    assunto: '',
+                    mensagem: ''
+                });
+            } else {
+                setSubmitStatus('error');
+                setStatusMessage(data.error || 'Erro ao enviar mensagem. Tente novamente.');
+            }
+        } catch (error) {
+            setSubmitStatus('error');
+            setStatusMessage('Erro ao enviar mensagem. Verifique sua conexão e tente novamente.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -139,9 +185,13 @@ const Footer = () => {
 
                                 {/* Botão Enviar */}
                                 <div id="botao-social-icon" className="flex flex-row lg:flex-row justify-between items-center text-align-center">
-                                    <button type="submit" className="form-button">
-                                        Enviar
-                                        <span className="ml-2">→</span>
+                                    <button
+                                        type="submit"
+                                        className="form-button disabled:opacity-50 disabled:cursor-not-allowed"
+                                        disabled={isSubmitting}
+                                    >
+                                        {isSubmitting ? 'Enviando...' : 'Enviar'}
+                                        {!isSubmitting && <span className="ml-2">→</span>}
                                     </button>
                                     <div className="pr-4 pb-2 block lg:hidden">
                                         {/* Social Icons */}
@@ -152,6 +202,17 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
+
+                                {/* Status Message */}
+                                {submitStatus !== 'idle' && (
+                                    <div className={`mt-4 p-3 rounded-lg text-sm ${
+                                        submitStatus === 'success'
+                                            ? 'bg-green-500/20 text-green-100 border border-green-400'
+                                            : 'bg-red-500/20 text-red-100 border border-red-400'
+                                    }`}>
+                                        {statusMessage}
+                                    </div>
+                                )}
                             </form>
                         </div>
 
@@ -186,7 +247,7 @@ const Footer = () => {
 
                 <div>
                     {/* Social Icons */}
-                    <div className="hidden lg:flex lg:justify-center lg:justify-end space-x-4 mt-6">
+                    <div className="hidden lg:flex lg:justify-end space-x-4 mt-6">
                         <a href="https://www.instagram.com/lelume.br?igsh=YzIyN3FwY2E2cnBj" target='_blank' className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <span className="text-blue-600 font-bold text-sm">in</span>
                         </a>
