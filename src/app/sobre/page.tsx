@@ -1,11 +1,12 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Banner from '@/components/Banner';
-import { Metadata } from 'next';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Banner from "@/components/Banner";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Lelume - Sobre Nós',
-  description: 'Conheça a Lelume, especialistas em conectar pessoas a plataformas de conteúdo literário digital.',
+  title: "Lelume - Sobre Nós",
+  description:
+    "Conheça a Lelume, especialistas em conectar pessoas a plataformas de conteúdo literário digital.",
 };
 
 export default function SobreNos() {
@@ -28,7 +29,13 @@ export default function SobreNos() {
         <section className="mx-auto">
           <div className="bg-gray-50 px-8 py-12 md:px-20 md:py-30 rounded-lg">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              A Lêlume conecta leitores, estudantes e profissionais da saúde a um universo completo de e-books, audiobooks, revistas e conteúdos técnicos. São milhares de títulos que vão da literatura geral a mais de 3.200 obras médicas disponíveis pela Minha Biblioteca. Tudo pensado para aprender, estudar e se atualizar com praticidade, economia e inovação, colocando o conhecimento no centro da sua rotina.
+              A Lêlume conecta leitores, estudantes e profissionais da saúde a
+              um universo completo de e-books, audiobooks, revistas e conteúdos
+              técnicos. São milhares de títulos que vão da literatura geral a
+              mais de 3.200 obras médicas disponíveis pela Biblioteca Virtual.
+              Tudo pensado para aprender, estudar e se atualizar com
+              praticidade, economia e inovação, colocando o conhecimento no
+              centro da sua rotina.
             </p>
             {/* <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Nosso portfólio é um convite para explorar: e-books, audiobooks, revistas temáticas, quadrinhos, gibis, mangás e
@@ -36,7 +43,7 @@ export default function SobreNos() {
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               E para quem vive o universo da saúde, vamos além: oferecemos nosso acervo técnico robusto com mais de 3.200
-              títulos da Editora Manole, via Minha Biblioteca, cobrindo mais de 100 especialidades médicas. Um verdadeiro hub
+              títulos da Editora Manole, via Biblioteca Virtual, cobrindo mais de 100 especialidades médicas. Um verdadeiro hub
               de atualização confiável, disponível em qualquer lugar.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -52,10 +59,10 @@ export default function SobreNos() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">missão</h2>
             <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-              Colocar quem ama ler no centro, oferecendo acesso simples e gostoso
-              ao conhecimento digital; apoiar estudantes com conteúdo confiável e
-              prático; e impulsionar médicos e entusiastas da saúde com acervos
-              atualizados que transformam estudo em experiência.
+              Colocar quem ama ler no centro, oferecendo acesso simples e
+              gostoso ao conhecimento digital; apoiar estudantes com conteúdo
+              confiável e prático; e impulsionar médicos e entusiastas da saúde
+              com acervos atualizados que transformam estudo em experiência.
             </p>
           </div>
         </section>
@@ -65,10 +72,11 @@ export default function SobreNos() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">visão</h2>
             <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-              Ser a marca brasileira que as pessoas lembram quando pensam em ler e
-              aprender no digital: favorita dos leitores, parceira essencial de
-              estudantes e presença referência em congressos e rotinas da saúde.
-              Unindo curadoria, proximidade e inovação em cada ponto de contato.
+              Ser a marca brasileira que as pessoas lembram quando pensam em ler
+              e aprender no digital: favorita dos leitores, parceira essencial
+              de estudantes e presença referência em congressos e rotinas da
+              saúde. Unindo curadoria, proximidade e inovação em cada ponto de
+              contato.
             </p>
           </div>
         </section>
@@ -79,10 +87,13 @@ export default function SobreNos() {
             <h2 className="text-4xl md:text-5xl font-bold mb-8">valores</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold mb-4">Inovação Focada & Simplicidade</h3>
+                <h3 className="text-2xl font-bold mb-4">
+                  Inovação Focada & Simplicidade
+                </h3>
                 <p className="text-lg leading-relaxed max-w-2xl mx-auto">
-                  Preferimos o claro ao complexo: evoluir sempre, com foco, utilidade
-                  e design de experiência que facilita a vida de quem lê, estuda e pratica.
+                  Preferimos o claro ao complexo: evoluir sempre, com foco,
+                  utilidade e design de experiência que facilita a vida de quem
+                  lê, estuda e pratica.
                 </p>
               </div>
             </div>
