@@ -1,9 +1,9 @@
-import Header from '@/components/Header';
-import Banner from '@/components/Banner';
-import Section1 from '@/components/Section1';
-import Section2 from '@/components/Section2';
-import SectionCards from '@/components/SectionCards';
-import Footer from '@/components/Footer';
+import Header from "@/components/Header";
+import Banner from "@/components/Banner";
+import Section1 from "@/components/Section1";
+import Section2 from "@/components/Section2";
+import SectionCards from "@/components/SectionCards";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,14 +12,14 @@ export default function Home() {
       <Header />
 
       {/* Banner Component */}
-      <Banner
+      {/* <Banner
         imageSrc="/home-banner.jpeg"
         imageAlt="Banner Lelume"
         title=""
         subtitle=""
-      />
+      /> */}
 
-      <div className='bg-section'>
+      <div className="bg-section">
         <Section1
           imageSrc="/section_1.png"
           imageAlt="Nossos Parceiros"
@@ -49,7 +49,8 @@ export default function Home() {
             },
             {
               title: "Rio de Janeiro",
-              subtitle: "Congresso da Associação Brasileira de Fisioterapia Cardiorrespiratória 2025",
+              subtitle:
+                "Congresso da Associação Brasileira de Fisioterapia Cardiorrespiratória 2025",
             },
             {
               title: "Santa Catarina",
@@ -58,7 +59,7 @@ export default function Home() {
             {
               title: "São Paulo",
               subtitle: "Congresso Brasileiro de Cannabis Medicinal",
-            }
+            },
           ]}
         />
       </div>
