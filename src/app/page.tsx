@@ -20,12 +20,12 @@ export default function Home() {
       /> */}
 
       <div className="bg-section">
-        <Section1
+        {/* <Section1
           imageSrc="/section_1.png"
           imageAlt="Nossos Parceiros"
           title="Construindo Parcerias Sólidas"
           description="Transformamos grandes histórias em experiências sonoras inesquecíveis. Somos pioneiros em audiolivros no Brasil, unindo tecnologia e narrativa para conectar você ao conhecimento e à magia da literatura, onde e quando quiser."
-        />
+        /> */}
 
         {/* Section 2 Component - Ordem Invertida */}
         <Section2
