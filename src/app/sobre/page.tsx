@@ -16,12 +16,12 @@ export default function SobreNos() {
       <Header />
 
       {/* Banner Component */}
-      <Banner
+      {/* <Banner
         imageSrc="/home-banner.jpeg"
         imageAlt="Banner Sobre Nós"
         title=""
         subtitle=""
-      />
+      /> */}
 
       {/* Main Content */}
       <main>
